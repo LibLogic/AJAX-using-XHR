@@ -14,10 +14,10 @@
     <script>
         document.getElementById('button').addEventListener('click', loadUsers);
         
-        //Retrieving users asynchronously from mySQL database
+
         function loadUsers(){
             var xhr = new XMLHttpRequest();
-            xhr.open('GET', 'users.php', true);
+            xhr.open('GET', 'users.json', true);
 
             xhr.onload = function(){
                 if(this.status == 200){
